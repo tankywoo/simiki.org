@@ -1,54 +1,84 @@
 ---
 layout: post
-title: "Quick Start"
+title: "Simiki"
 date: 2013-12-08 22:30
 ---
 
-Simiki Version : `0.1.0`
+Simiki 是一个用[Python](https://www.python.org/)写的简单的 wiki 框架, 适合分类记录一些技术文档.
 
-## 安装 Simiki ##
+* 简单，适合做个人维基
+* 使用 Markdown 撰写
+* 以分类目录为导向，分类存放源文件
+* 生成静态 HTML 页面
+* 命令行管理工具
+
+## Quick Start ##
+
+Version : `0.2.1`
+
+### 安装 ###
 
 	pip install simiki
 
-或者
+### 升级 ###
 
-	python setup.py install
+	pip install -U simiki
 
-## 配置文件 ##
+### 构建站点 ###
 
-	mkdir mywiki
-	cd mywiki
+	mkdir mywiki && cd mywiki
+	simiki init
 
-接着下载配置文件:
+编辑wiki配置文件`_config.yml` 进行相应配置
 
-	wget https://raw.github.com/tankywoo/simiki/master/simiki/conf_templates/_config.yml.in -O _config.yml
+### 新建一篇 wiki ###
 
-编辑配置文件, 主要是下面几项:
+	simiki new -t "Hello Simiki" -c base
 
-	url: http://simiki.org
-	title: Simiki
-	keywords: simiki, wiki, python, web, code
-	description: Simiki is a simple static site generator for wiki.
-	author: Tanky Woo
-
-## 构建站点 ##
-
-	simiki build_site
-
-生成 `content` 和 `html` 两个目录, `content` 目录是存放 `Markdown` 源文件, `html` 是生成的静态文件.
-
-接着会把相应主题的css等文件复制到 `html` 目录下.
-
-## 新建一篇 wiki ##
-
-	simiki new_wiki -c base -t 'Quick Start'
-
-新建一篇 wiki, 目录是 base, wiki 的标题是 "Quick Start". 文件名会自动识别为 quick-start.md, 存放在 html/base/quick-start.md.
-
-也可以通过 `-f` 参数手动指定文件名.
-
-然后就可以打开相应文件撰写 wiki 了.
-
-## 生成/更新静态页面 ##
+### 生成/更新静态页面 ###
 
 	simiki generate
+
+### 预览 ###
+
+	simiki preview
+
+更多可以查看帮助:
+
+	simiki -h
+
+或访问网站 [simiki.org](http://simiki.org/)
+
+
+## 为什么叫Simiki? ##
+
+`Simple Wiki`，取了前后各三个字母组成
+
+## 其它 ##
+
+* [simiki.org](http://simiki.org/)
+* <https://github.com/tankywoo/simiki>
+* Email: <me@tankywoo.com>
+
+## License ##
+
+The MIT License (MIT)
+
+Copyright (c) 2013 Tanky Woo
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
