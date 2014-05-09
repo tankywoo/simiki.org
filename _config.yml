@@ -1,6 +1,5 @@
-# ----------------- #
-#    Main Configs   #
-# ----------------- #
+# Simiki Configuration
+# Doc: http://simiki.org/configuration.html
 
 # e.g: "http://example.com"
 url: http://simiki.org
@@ -9,26 +8,29 @@ keywords: simiki, wiki, python, web, code
 description: Simiki is a simple static site generator for wiki.
 author: Tanky Woo
 
-# The catalog of theme.
+# If publishing to a subdirectory as in http://example.com/project set 'root: /project'
+root: /
+source: content
+destination: output
+themes_dir: themes
+
+# Choose the theme
 theme: simple
 
-# The base directory of the site.
-# If base_dir is `None`, default site structure is:
-#   ./
-#   ├── _config.yml
-#   ├── content
-#   └── html
-base_dir: 
-
-# Set the makrdown files source, and output html files destination.
-source: content
-destination: html
-
+# Default file extension
 default_ext: "md"
 
-# TODO
 # Replace the default home page with indexes.
 default_home_page: 
 
-# Open the code highlight feature.
+# Enable the code highlight feature.
 pygments: true
+
+# Debug Mode, default is False
+debug: false
+
+# Set `true` to use "index.md" under source dir as index,
+# or you can set any wiki file as index, such as "tool/git.md".
+# If not set or set `false`, simiki will auto generate catalog as index, this is 
+# the default action
+index: true
