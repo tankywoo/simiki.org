@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}{{ site.title }}{% endblock %}
+
+{% block container %}
+<div class="jumbotron">
+    <h1>Simiki</h1>
+    <h3>A simple wiki framework</h3>
+    <p class="lead"></p>
+    <p><a class="btn btn-lg btn-success" href="/quickstart.html" role="button">Quick Start</a></p>
+</div>
+<div class="row marketing">
+        <div class="col-lg-6">
+          <h4>Easy</h4>
+          <p>Easy to use. Creating a wiki only needs a few steps</p>
+
+          <h4>Structure</h4>
+          <p>Store source files by category</p>
+
+          <h4>CLI</h4>
+          <p>A CLI tool to manage the wiki</p>
+
+        </div>
+
+        <div class="col-lg-6">
+          <h4>Markdown</h4>
+          <p>Use Markdown. Just open your editor and write</p>
+
+          <h4>Static</h4>
+          <p>Static HTML output</p>
+        </div>
+      </div>
+{% endblock %}

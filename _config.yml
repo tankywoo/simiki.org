@@ -15,7 +15,7 @@ destination: output
 themes_dir: themes
 
 # Choose the theme
-theme: simple
+theme: cod
 
 # Default file extension
 default_ext: "md"
@@ -33,4 +33,4 @@ debug: false
 # or you can set any wiki file as index, such as "tool/git.md".
 # If not set or set `false`, simiki will auto generate catalog as index, this is 
 # the default action
-index: true
+index: 

@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="Stylesheet" type="text/css" href="{{ site.root }}/static/css/bootstrap.min.css">
+        <link rel="Stylesheet" type="text/css" href="{{ site.root }}/static/css/style.css">
+        <link rel="Stylesheet" type="text/css" href="{{ site.root }}/static/css/tango.css">
+        <title>{% block title %}{% endblock %}</title>
+        <meta name="keywords" content="{{ site.keywords }}"/>
+        <meta name="description" content="{{ site.description }}"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <ul id="myTab" class="nav nav-pills pull-right">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/quickstart.html">Quick Start</a></li>
+                    <li><a href="/docs/">Documents</a></li>
+                    <li><a href="http://wiki.tankywoo.com/">Demo</a></li>
+                    <li><a href="https://github.com/tankywoo/simiki">Github</a></li>
+                </ul>
+                <h2 class="text-muted">Simiki</h2>
+            </div>
+            {% block container %}
+            {% endblock %}
+            <div class="footer">
+                <span>
+                    Copyright © 2012-2014 {{ site.author }}.
+                    Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.
+                </span>
+<span>
+<a href="https://pypi.python.org/pypi/simiki" target="_blank"><img src="http://img.shields.io/pypi/v/simiki.svg"  alt="" /></a>
+<a href="https://github.com/tankywoo/simiki/blob/master/LICENSE" target="_blank"><img src="http://img.shields.io/badge/license-MIT-yellow.svg"  alt="" /></a>
+</span>
+            </div>
+        </div>
+        <script type="text/javascript" src="{{ site.root }}/static/js/jquery.min.js"></script>
+        <script type="text/javascript" src="{{ site.root }}/static/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+ $(document).ready(function () {
+        $('a[href="' + this.location.pathname + '"]').parent().addClass('active');
+    });
+</script>
+    </body>
+</html>
