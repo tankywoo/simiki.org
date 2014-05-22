@@ -54,7 +54,7 @@ The configuration file is `_config.yml`.
 </tr>
 <tr>
 	<td>`theme`</td>
-	<td>Choose the theme, whose name is the same as directory name under `themes_dir`</td>
+	<td>Choose the theme, whose name is the same as directory name under `themes_dir`, such as `theme: simple`</td>
 </tr>
 <tr>
 	<td>`default_ext`</td>
