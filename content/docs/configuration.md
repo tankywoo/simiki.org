@@ -75,6 +75,20 @@ The configuration file is `_config.yml`.
 </tbody>
 </table>
 
+## Initial content ##
+
+The content of initial configuration file looks like this:
+
+	url:
+	title:
+	keywords:
+	description:
+	author:
+
+All the other configuration items use the default value.
+
+## Example ##
+
 An configuration file example:
 
 	url: http://wiki.tankywoo.com
