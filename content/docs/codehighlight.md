@@ -123,7 +123,7 @@ if __name__ == __main__:
 	sys.exit()
 ```
 
-More detailed usage can be seen in [Python-Markdown] doc:
+More detailed usage can be seen in [Python-Markdown](https://pythonhosted.org/Markdown/) document:
 
-* [Fenced Code Blocks]()
-* [CodeHilite]()
+* [Fenced Code Blocks](https://pythonhosted.org/Markdown/extensions/fenced_code_blocks.html)
+* [CodeHilite](https://pythonhosted.org/Markdown/extensions/code_hilite.html)
