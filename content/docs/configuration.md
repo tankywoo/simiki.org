@@ -45,7 +45,7 @@ The configuration file is `_config.yml`.
 <td>Store the source files, only support markdown file so far. Default is `content`, you'd better not to change it unless necessary.</td>
 </tr>
 <tr>
-<td>`destication`</td>
+<td>`destination`</td>
 <td>Store the output html files. Default is `output`, you'd better not to change it unless necessary</td>
 </tr>
 <tr>
@@ -89,7 +89,7 @@ All the other configuration items use the default value.
 
 ## Example ##
 
-An configuration file example:
+A configuration file example:
 
 	url: http://wiki.tankywoo.com
 	title: Wiki · Tanky Woo
