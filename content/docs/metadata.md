@@ -32,7 +32,7 @@ Supported metadata:
 </tr>
 <tr>
 <td>`date`</td>
-<td>The date time of page creatiion.</td>
+<td>The date time of page creation.</td>
 </tr>
 </tbody>
 </table>
