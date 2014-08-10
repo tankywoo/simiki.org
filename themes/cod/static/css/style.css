@@ -78,3 +78,6 @@ body {
   }
 }
 
+pre {
+    border: 0px;
+}
