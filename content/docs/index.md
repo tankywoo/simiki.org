@@ -8,6 +8,7 @@ date: 2014-05-13 21:40
 
 * [Configuration](configuration.html)
 * [Structure](structure.html)
+* [Deploy](deploy.html)
 
 ## Content ##
 
