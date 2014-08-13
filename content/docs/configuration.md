@@ -89,12 +89,17 @@ All the other configuration items use the default value.
 
 ## Example ##
 
+<div class="alert alert-warning alert-block">
+<h4>Warning!</h4>
+This is only an example, do not simply copy and use it!
+</div>
+
 A configuration file example:
 
 	url: http://wiki.tankywoo.com
 	title: Wiki · Tanky Woo
 	keywords: wiki, makrdown, linux, python, cpp, ops, simiki
-	description: "Tanky Woo's personal wiki, powered by vim and markdown. Focus on Python, C/C++, Linux, Ops-Dev, Gentoo, and so on."
+	description: "Focus on Python, C/C++, Linux, Ops-Dev, Gentoo, and so on."
 	author: Tanky Woo
 
 	root: /
