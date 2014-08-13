@@ -4,7 +4,7 @@ title: "Deploy"
 date: 2014-05-20 08:30
 ---
 
-## Deploy with Github Pages ##
+## Github Pages ##
 
 [Github Pages](https://pages.github.com/) is the simplest way to deploy your site.
 
@@ -45,6 +45,12 @@ Read the [Github Pages Documents](https://help.github.com/articles/user-organiza
 Wait for a while and visit `http://<username>.github.io/`.
 
 
-## Deploy with your host ##
+## Self-managed server ##
 
-TODO
+Use `scp` or `rsync` to transfer all files in `output` directory to the appropriate web root directory for your web server.
+
+Simiki also support [Fabric](http://www.fabfile.org/) to transfer files. Configure `fabfile.py` and use `fab deploy` to deploy.
+
+## FTP ##
+
+Upload all files in `output` directory by ftp tool to your server.
