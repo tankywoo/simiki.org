@@ -18,7 +18,7 @@ date: 2014-01-01 00:02
 
 ### Create a new wiki ###
 
-	simiki new -t "Hello Simiki" -c first-catetory
+	simiki new -t "Hello Simiki" -c first-category
 
 ### Generate ###
 
