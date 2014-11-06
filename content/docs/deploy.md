@@ -111,6 +111,17 @@ The project pages url is `http://<username>.github.io/<projectname>`, so you sho
 
 The others are the same as `Project Pages with Custom Doamin` above.
 
+An example:
+
+* [tankywoo/simiki-project-page-without-domain](https://github.com/tankywoo/simiki-project-page-without-domain)
+* [http://tankywoo.github.io/simiki-project-page-without-domain/](http://tankywoo.github.io/simiki-project-page-without-domain/)
+
+**NOTE**:
+
+If `root` is setted in `_config.yml`, you should use `--ignore-root` when you want to preview in local environment. And regenerate without `--ignore-root` when you prepare to deploy to remote server.
+
+    simiki generate --ignore-root
+
 ## Self-Managed Server ##
 
 Use `scp` or `rsync` to transfer all files in `output` directory to the appropriate web root directory for your web server.
