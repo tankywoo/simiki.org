@@ -90,7 +90,7 @@ Wait for a while and visit `http://<yourdomain.com>`
 
 Note:
 
-* **Do not** change `url` settings in `_config.yml`.
+* **Do not** change `root` settings in `_config.yml`.
 * If you set project page with domain, visit your wiki with setted domain, not github domain.
 
 More Reference:
@@ -105,9 +105,9 @@ An example:
 
 #### Without Custom Domain ####
 
-The project pages url is `http://<username>.github.io/<projectname>`, so you should set `url` to your projectname in `_config.yml`:
+The project pages url is `http://<username>.github.io/<projectname>`, so you should set `root` to your projectname in `_config.yml`:
 
-    url: <projectname>
+    root: /<projectname>
 
 The others are the same as `Project Pages with Custom Doamin` above.
 
