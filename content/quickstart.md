@@ -11,14 +11,10 @@ date: 2014-01-01 00:02
 
 	pip install -U simiki
 
-### Init Site ###
+### Initialize ###
 
 	mkdir mywiki && cd mywiki
 	simiki init
-
-### Create a new wiki ###
-
-	simiki new -t "Hello Simiki" -c first-category
 
 ### Generate ###
 
@@ -27,6 +23,5 @@ date: 2014-01-01 00:02
 ### Preview ###
 
 	simiki preview
-
 
 
