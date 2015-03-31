@@ -41,6 +41,10 @@
 <script type="text/javascript">
  $(document).ready(function () {
         $('a[href="' + this.location.pathname + '"]').parent().addClass('active');
+		var loc = this.location.pathname
+		if (loc.match("^/docs/")) {
+			$('a[href="/docs/"]').parent().addClass('active');
+		}
     });
 </script>
 
