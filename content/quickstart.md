@@ -18,10 +18,10 @@ date: 2014-01-01 00:02
 
 ### Generate ###
 
-	simiki generate
+	simiki g
 
 ### Preview ###
 
-	simiki preview
+	simiki p
 
 
