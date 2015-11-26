@@ -1,6 +1,6 @@
 ---
-layout: page
 title: "代码高亮"
+date: 2013-10-12 00:00
 ---
 
 代码高亮使用的是 [Pygments](http://pygments.org/) 库. 一个强大的代码语法高亮套件.
