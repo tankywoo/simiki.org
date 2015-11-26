@@ -1,7 +1,6 @@
 ---
-layout: page
 title: "目录结构"
-date: 2014-05-14 00:00
+date: 2013-10-12 00:00
 ---
 
 使用Simiki初始新建(`simiki init`)后的目录结构如下:

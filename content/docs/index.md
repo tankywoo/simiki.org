@@ -14,7 +14,7 @@ Before reading these documents, I recommend that you take a look first at [Quick
     <h3>Start</h3>
     <ul>
       <li><a href="configuration.html">Configuration</a></li>
-      <li><a href="structure.html">Structure</a></li>
+      <li><a href="structure.html">Directory Structure</a></li>
       <li><a href="usage.html">Basic Usage</a></li>
     </ul>
     <h3>Custom</h3>
