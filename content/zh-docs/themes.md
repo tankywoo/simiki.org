@@ -1,7 +1,6 @@
 ---
-layout: page
 title: "主题"
-date: 2014-05-14 00:20
+date: 2013-10-12 00:00
 ---
 
 Simiki 主题使用的[Jinja2](http://jinja.pocoo.org/), 一个强大的模板引擎, 由Python开发.
