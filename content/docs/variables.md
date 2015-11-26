@@ -1,34 +1,66 @@
 ---
-layout: page
 title: "Variables"
-date: 2014-03-01 17:38
+date: 2013-10-12 00:00
 ---
 
 ## Site Variables ##
 
-`site` : Configurations from `_config.yml`. Detailed description in [Configuration](/docs/configuration.html)
+`site` variable is a dict, stored global site configuration and information.
 
-* `site.url`
-* `site.title`
-* `site.keyword`
-* `site.description`
-* `site.author`
-* `site.root`
-* `site.source`
-* `site.destination`
-* `site.themes_dir`
-* `site.theme`
-* `site.default_ext`
-* `site.pygments`
-* `site.debug`
-* `site.index`
+**In addition to the variables list below, some other variables are given in [Configuration](/docs/configuration.html)**
+
+<table class="table table-bordered table-hover" markdown="1">
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>`site.time`</td>
+      <td>The last date time site update/generate</td>
+    </tr>
+    <tr>
+      <td>`site.structure`</td>
+      <td>Store the meta data for all pages. Only exists when generating index. ***This variable will be moved to `pages` variable in the later version***</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Page Variables ##
 
-`page` : configurations from a single wiki page's yaml header. Detailed description in [Metadata](/docs/metadata.html)
+`page` variable is a dict, stored the wiki page's meta data and content, etc.
 
-* `page.title`
-* `page.category`
-* `page.date`
-* `page.content`
-* `page.filename`
+**In addition to the variables list below, some other variables are given in [Meta Data](/docs/metadata.html)**
+
+<table class="table table-bordered table-hover" markdown="1">
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>`page.filename`</td>
+      <td>Filename of the wiki page. The last pathname component, without slash</td>
+    </tr>
+    <tr>
+      <td>`page.content`</td>
+      <td>The body content of html page, without header and footer information</td>
+    </tr>
+    <tr>
+      <td>`page.category`</td>
+      <td>The classification category name, relate path to content directory</td>
+    </tr>
+  </tbody>
+</table>
+
+For example, a source file `content/linux/bash.md`, the page.filename is bash.md, the page.category is linux.
+
+## Index Variables ##
+
+`pages` variable is a dict.
+
+***Exists in later version***
