@@ -1,25 +1,40 @@
 ---
-layout: page
 title: "Documents"
-date: 2014-05-13 21:40
+date: 2013-10-12 00:00
 ---
 
-## Start ##
+Welcome to Documentation of Simiki.
 
-* [Configuration](configuration.html)
-* [Structure](structure.html)
-* [Deploy](deploy.html)
+Simiki is a simple personal wiki generator. Use [Markdown](https://daringfireball.net/projects/markdown/) to write, and generate html page. The wiki files classified by category, easy to manage. Note that Simiki only support one-level classfication by now.
 
-## Content ##
+Before reading these documents, I recommend that you take a look first at [Quick Start](/quickstart.html).
 
-* [Metadata](metadata.html)
-* [Code Highlight](codehighlight.html)
+<div class="row marketing">
+  <div class="col-lg-6">
+    <h3>Start</h3>
+    <ul>
+      <li><a href="configuration.html">Configuration</a></li>
+      <li><a href="structure.html">Structure</a></li>
+      <li><a href="usage.html">Basic Usage</a></li>
+    </ul>
+    <h3>Custom</h3>
+    <ul>
+      <li><a href="variables.html">Variables</a></li>
+      <li><a href="themes.html">Themes</a></li>
+    </ul>
+  </div>
 
-## Custom ##
+  <div class="col-lg-6">
+    <h3>Page Content</h3>
+    <ul>
+      <li><a href="metadata.html">Meta Data</a></li>
+      <li><a href="codehighlight.html">Code Highlight</a></li>
+    </ul>
+    <h3>Others</h3>
+    <ul>
+      <li><a href="deploy.html">Deploy</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+  </div>
 
-* [Variables](variables.html)
-* [Themes](themes.html)
-
-## Others ##
-
-* [FAQ](faq.html)
+</div>
