@@ -1,7 +1,6 @@
 ---
-layout: page
 title: "FAQ"
-date: 2015-01-13 01:06
+date: 2013-10-12 00:00
 ---
 
 ### Windows下使用Simiki ###
@@ -26,7 +25,7 @@ Simiki默认会自动生成首页.
 
 ### 对TOC的支持吗? ###
 
-支持. 在YAML Front Matter下面, wiki内容的顶部，添加一行即可:
+是的, 支持 TOC (Table Of Content). 在YAML Front Matter下面, wiki内容的顶部，添加一行即可:
 
 	---
 	title: "Hello World"
