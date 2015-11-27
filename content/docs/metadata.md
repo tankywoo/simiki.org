@@ -1,18 +1,16 @@
 ---
-layout: page
 title: "Meta Data"
-date: 2014-05-14 00:15
+date: 2013-10-12 00:00
 ---
 
 Each page use YAML format metadata like:
 
 	---
-	layout: page
 	title: "Meta Data"
-	date: 2014-05-14 00:15
+	date: 2013-10-12 00:00
 	---
 
-Predefined metadata:
+Predefined meta data:
 
 <table class="table table-bordered table-hover" markdown="1">
   <thead>
@@ -22,19 +20,21 @@ Predefined metadata:
     </tr>
   </thead>
   <tbody>
-  <tr>
-    <td>`layout`</td>
-    <td>Specify the layout, the file name of theme. Default is `page`</td>
-  </tr>
-  <tr>
-    <td>`title`</td>
-    <td>The title of current page `*`</td>
-  </tr>
-  <tr>
-    <td>`date`</td>
-    <td>The date time of page creation `*`</td>
-  </tr>
+    <tr>
+      <td>`title`</td>
+      <td>The title of current wiki page (**Required**)</td>
+    </tr>
+    <tr>
+      <td>`date`</td>
+      <td>The date time of wiki page creation, with format `YYYY-mm-dd HH:MM` (**Required**)</td>
+    </tr>
+    <tr>
+      <td>`layout`</td>
+      <td>Specify the layout template to use, the same name with template under used theme. Default is `page`</td>
+    </tr>
+    <tr>
+      <td>`draft`</td>
+      <td>Boolean value, if this page is draft and do not want to generate html page, set `true`. Default is `false`</td>
+    </tr>
   </tbody>
 </table>
-
-(`*` stands for `must exist`)

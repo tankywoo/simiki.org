@@ -1,19 +1,39 @@
 ---
-layout: page
 title: "Code Highlight"
+date: 2013-10-12 00:00
 ---
 
-Use [Pygments](http://pygments.org/) to generate syntax css:
+Code highlight of Simiki use [Pygments](http://pygments.org/), a powerful syntax highlighter.
 
-Get the color theme name:
+## Highlight CSS ##
 
+Use [Pygments](http://pygments.org/) to generate syntax css.
+
+In general the theme will include syntax css file.
+
+	# Get the color themes list
 	pygmentize -L styles
 
-Generate css:
-
+	# Generate syntax css file
 	pygmentize -f html -S [colortheme name] -a .hlcode > syntax.css
 
-The simplest way is to use `indented code blocks`.
+## Use Code Highlight Feature ##
+
+**Note**: Make sure you are familiar with the syntax of [Markdown](https://daringfireball.net/projects/markdown/)
+
+(Below example, `-` represent a space)
+
+***`indented code blocks`*** is the simplest way, with a tab indentation, and have `Shebang`:
+
+```python
+----#!/usr/bin/env python
+----# -*- coding: utf-8 -*-
+
+----if __name__ == "__main__":
+--------print("Hello World!")
+```
+
+The result:
 
 	#!/usr/bin/env python
 	# -*- coding: utf-8 -*-
@@ -21,17 +41,22 @@ The simplest way is to use `indented code blocks`.
 	if __name__ == "__main__":
 		print("Hello World!")
 
-Or use `fenced code blocks`.
 
-PHP extra's syntax:
+***`fenced code blocks`*** include some different style listed below:
 
-	~~~~
-	#!/usr/bin/env python
-	# -*- coding: utf-8 -*-
+PHP extra's syntax, with four tilde at begin and end:
 
-	if __name__ == "__main__":
-		print("Hello World!")
-	~~~~
+```python
+~~~~
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+if __name__ == "__main__":
+	print("Hello World!")
+~~~~
+```
+
+The result:
 
 ~~~~
 #!/usr/bin/env python
@@ -41,15 +66,29 @@ if __name__ == "__main__":
 	print("Hello World!")
 ~~~~
 
-Define a language:
+At the same time you can define a language:
 
-	~~~~{.python}
-	#!/usr/bin/env python
-	# -*- coding: utf-8 -*-
+```python
+~~~~{.python}
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
-	if __name__ == "__main__":
-		print("Hello World!")
-	~~~~
+if __name__ == "__main__":
+	print("Hello World!")
+~~~~
+
+########### OR ###########
+
+~~~~.python
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+if __name__ == "__main__":
+	print("Hello World!")
+~~~~
+```
+
+The result:
 
 ~~~~{.python}
 #!/usr/bin/env python
@@ -59,25 +98,7 @@ if __name__ == "__main__":
 	print("Hello World!")
 ~~~~
 
-or:
-
-	~~~~.python
-	#!/usr/bin/env python
-	# -*- coding: utf-8 -*-
-
-	if __name__ == "__main__":
-		print("Hello World!")
-	~~~~
-
-~~~~.python
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-if __name__ == "__main__":
-	print("Hello World!")
-~~~~
-
-Github fenced code blocks:
+Github fenced code blocks, with three back-quote at begin and end, with no indentation:
 
 	```python
 	#!/usr/bin/env python
@@ -87,6 +108,8 @@ Github fenced code blocks:
 		print("Hello World!")
 	```
 
+The result:
+
 ```python
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
@@ -95,9 +118,7 @@ if __name__ == "__main__":
 	print("Hello World!")
 ```
 
-<!-- -->
-
-Highlight some lines:
+In the end, you can highlight specified lines:
 
 	~~~~{.python hl_lines="1 3"}
 	#!/usr/bin/env python
@@ -107,7 +128,7 @@ Highlight some lines:
 		print("Hello World!")
 	~~~~
 
-or:
+	########### 或者 ###########
 
 	```python hl_lines="1 3"
 	import sys
@@ -115,6 +136,8 @@ or:
 	if __name__ == __main__:
 		sys.exit()
 	```
+
+The result:
 
 ```python hl_lines="1 3"
 import sys

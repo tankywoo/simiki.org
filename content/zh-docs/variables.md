@@ -1,7 +1,6 @@
 ---
-layout: page
 title: "变量"
-date: 2014-03-01 17:38
+date: 2013-10-12 00:00
 ---
 
 ## 站点变量 ##
@@ -45,7 +44,7 @@ date: 2014-03-01 17:38
   <tbody>
     <tr>
       <td>`page.filename`</td>
-      <td>页面的文件名</td>
+      <td>页面的文件名, 整个路径的最后一部分, 不包含斜线(slash)</td>
     </tr>
     <tr>
       <td>`page.content`</td>
@@ -53,10 +52,12 @@ date: 2014-03-01 17:38
     </tr>
     <tr>
       <td>`page.category`</td>
-      <td>页面的分类目录名</td>
+      <td>页面的分类目录名, 相对于content目录的部分</td>
     </tr>
   </tbody>
 </table>
+
+比如一个源文件`content/linux/bash.md`, page.filename是bash.md, page.category是linux.
 
 ## 首页变量 ##
 
