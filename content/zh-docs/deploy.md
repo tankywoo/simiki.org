@@ -1,7 +1,6 @@
 ---
-layout: page
 title: "部署"
-date: 2014-05-20 08:30
+date: 2013-10-12 00:00
 ---
 
 部署和生成的`output`目录内容相关.
@@ -10,7 +9,7 @@ date: 2014-05-20 08:30
 
 ## 自己的服务器 ##
 
-通过`rsync`或者`scp`命令, 将`output`目录的静态文件传到自己服务器的相应站点根目录, 配合Web Server(如Nginx, Apache).
+通过`rsync`或者`scp`命令, 将`output`目录的静态文件传到自己服务器的相应站点根目录, 配合[Web Server](https://en.wikipedia.org/wiki/Web_server)(如Nginx, Apache等).
 
 如果使用Fabric, 则需要在`_config.yml`中配置`deploy`配置项:
 

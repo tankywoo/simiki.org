@@ -1,14 +1,89 @@
 ---
-layout: page
 title: "Deploy"
-date: 2014-05-20 08:30
+date: 2013-10-12 00:00
 ---
+
+Deployment is related to the content of `content` directory.
+
+Below list some common deployment mode/method, which support basic command tool, or based on [fabfile](/docs/usage.html#\_2)
+
+## Self-Managed Server ##
+
+Use `rsync` or `scp` command, transfer the content of output directory to the root path of your server, configured with [Web Server](https://en.wikipedia.org/wiki/Web_server)(Such as Nginx, Apache, etc.)
+
+If use Fabric, you need to add `deploy` settings in `_config.yml`:
+
+	deploy:
+	  - type: rsync
+		user: <login username>
+		host: <remote host ip or domain>
+		dir: <path to store files/dirs under output>
+
+This will transfer the sub-file/sub-directory under output to the remote server, with configured directory path, base on Rsync with SSH.
+
+If you don't want to enter password every time, you can configure [SSH Private/Public Key](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2)
+
+Run deploy command:
+
+	$ fab deploy
+
+
+## FTP Server ##
+
+Use `sftp` or `ftp` command, upload the content of output directory to the root path of your server, configured from the background of server service provider.
+
+If use Fabric, you need to add `deploy` settings in `_config.yml`:
+
+	deploy:
+	  - type: ftp
+		host: <remote host ip or domain>
+		port: <remote host port, default is 21>
+		user: <login username>
+		password: <login password>
+		dir: <path to store files/dirs under output>
+
+This will upload the sub-file/sub-directory under output to the remote server, with configured directory path, base on FTP.
+
+**NOTE**: If configured password, DO NOT to put this config file to public server, such as Github public repository!
+
+**Advice**: Configure password with empty value, this will let you enter password every time:
+
+	deploy:
+	  - type: ftp
+		host: 1.1.1.1
+		user: bob
+		password:         # Leave this value be empty
+		dir: /
+
+Run deploy command:
+
+	$ fab deploy
+
 
 ## Github Pages ##
 
-[Github Pages](https://pages.github.com/) is the simplest way to deploy your site.
+[Github Pages](https://pages.github.com/) helps you build your own site, without to buy VPS/Virtual Host.
 
-Read the [Github Pages Documents](https://help.github.com/articles/user-organization-and-project-pages) for more detail.
+If use Fabric, you need to add `deploy` settings in `_config.yml`:
+
+	deploy:
+	  - type: git
+		remote: <remote repo name, default is 'origin'>
+		branch: <branch, default is 'gh-pages'>
+
+This will push the sub-file/sub-directory under output to the remote repository, with configured branch, based on Git.
+
+**NOTE**:
+
+* Make sure you have set remote-tracking reposistory/branch, use `git remote -v` to list the remote reposistory.
+* Make sure you have installed [ghp-import](https://github.com/davisp/ghp-import), a github-pages tool base on Python. More details see [issue 23](https://github.com/tankywoo/simiki/issues/23)
+
+Run deploy command:
+
+	$ fab deploy
+
+
+Below procedures are the origin method, and more trouble. More details are give in [Github Pages Documentation](https://help.github.com/articles/user-organization-and-project-pages/)
 
 ### User Pages ###
 
@@ -16,45 +91,45 @@ Create `User Pages`.
 
 1. Create a repository named `<username>.github.io`. `<username>` is your Github's username.
 
-2. Into your local site, setup a master branch in output directory:
+2. Into your local site, setup a `master` branch in output directory:
 
-        cd output
-        git init
-        git add .
-        git commit -m 'your comment'
-        # These steps will be shown when you create a repo in Github:
-        git remote add origin https://github.com/<username>/<username>.github.io.git
-        git push -u origin master
+		cd output
+		git init
+		git add .
+		git commit -m 'your comment'
+		# These steps will be shown when you create a repo in Github:
+		git remote add origin https://github.com/<username>/<username>.github.io.git
+		git push -u origin master
 
-3. Back to the parent directory, and touch a `.gitignore` file:
+3. Back to the parent directory, and create a `.gitignore` file:
 
-        cd ../
-        touch .gitignore
+		cd ../
+		echo '*.pyc\noutput' > .gitignore
 
-4. Edit `.gitignore` with the contents:
+4. Setup a `source` branch:
 
-        *.pyc
-        output
-
-5. Setup a source branch:
-
-        git init
-        git checkout -b source
-        git add .
-        git commit -m 'your comment'
-        # These steps will be shown when you create a repo in Github:
-        git remote add origin https://github.com/<username>/<username>.github.io.git
-        git push -u origin source
+		git init
+		git checkout -b source
+		git add .
+		git commit -m 'your comment'
+		# These steps will be shown when you create a repo in Github:
+		git remote add origin https://github.com/<username>/<username>.github.io.git
+		git push -u origin source
 
 Wait for a while and visit `http://<username>.github.io/`.
 
 ### Project Pages ###
 
+Project Pages have two types:
+
+* With custom domain
+* Without custom domain
+
 #### With Custom Domain ####
 
 1. Create a repository with any name `<projectname>`.
 
-2. Into your local site, setup a master branch in output directory:
+2. Into your local site, setup a `gh-pages` branch in output directory:
 
         cd output
         git init
@@ -67,17 +142,12 @@ Wait for a while and visit `http://<username>.github.io/`.
         git remote add origin git@github.com:<username>/<projectname>.git
         git push -u origin gh-pages
 
-3. Back to the parent directory, and touch a `.gitignore` file:
+3. Back to the parent directory, and create a `.gitignore` file:
 
-        cd ../
-        touch .gitignore
+		cd ../
+		echo '*.pyc\noutput' > .gitignore
 
-4. Edit `.gitignore` with the contents:
-
-        *.pyc
-        output
-
-5. Setup a source branch:
+4. Setup a `master` branch:
 
         git init
         git add .
@@ -90,7 +160,7 @@ Wait for a while and visit `http://<yourdomain.com>`
 
 Note:
 
-* **Do not** change `root` settings in `_config.yml`.
+* **DO NOT** change `root` settings in `_config.yml`.
 * If you set project page with domain, visit your wiki with setted domain, not github domain.
 
 More Reference:
@@ -109,7 +179,7 @@ The project pages url is `http://<username>.github.io/<projectname>`, so you sho
 
     root: /<projectname>
 
-The others are the same as `Project Pages with Custom Doamin` above.
+The others are the same as **Project Pages with Custom Doamin** above.
 
 An example:
 
@@ -122,12 +192,3 @@ If `root` is setted in `_config.yml`, you should use `--ignore-root` when you wa
 
     simiki generate --ignore-root
 
-## Self-Managed Server ##
-
-Use `scp` or `rsync` to transfer all files in `output` directory to the appropriate web root directory for your web server.
-
-Simiki also support [Fabric](http://www.fabfile.org/) to transfer files. Configure `fabfile.py` and use `fab deploy` to deploy.
-
-## FTP ##
-
-Upload all files in `output` directory by ftp tool to your server.
