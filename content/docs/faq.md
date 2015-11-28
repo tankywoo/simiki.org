@@ -19,6 +19,12 @@ If use [Fabric](http://www.fabfile.org/), some problems maybe happened, make sur
 
 	pip install ecsda
 
+Reference:
+
+* [Fabric installs but doesn’t run!](http://www.fabfile.org/faq.html#fabric-installs-but-doesn-t-run)
+* [Fabric 1.8.4 and 1.9.0 don't work on OS X 10.9](https://github.com/fabric/fabric/issues/1157)
+* [simiki issue #34](https://github.com/tankywoo/simiki/issues/34)
+
 ### Custom Index ###
 
 Simiki will auto generate an index page by default. If there is a file named `index.md` under `source` directory, Simiki will use this page as index content.

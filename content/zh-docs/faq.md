@@ -17,6 +17,12 @@ Simiki对Windows的支持不是很好, 如果可能, 请尽量选择在 `Unix` /
 
 	pip install ecsda
 
+参考:
+
+* [Fabric installs but doesn’t run!](http://www.fabfile.org/faq.html#fabric-installs-but-doesn-t-run)
+* [Fabric 1.8.4 and 1.9.0 don't work on OS X 10.9](https://github.com/fabric/fabric/issues/1157)
+* [simiki issue #34](https://github.com/tankywoo/simiki/issues/34)
+
 ### 自定义首页 ###
 
 Simiki默认会自动生成首页.
