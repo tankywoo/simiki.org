@@ -83,7 +83,11 @@ date: 2013-10-12 00:00
 	$ fab deploy
 
 
-下面的步骤是最原始的方式, 比较麻烦, 更详细的可以阅读 [Github Pages 文档](https://help.github.com/articles/user-organization-and-project-pages).
+---
+
+下面的步骤是最原始(后续可能弃用)的方式, 比较麻烦. 可以不必阅读.
+
+更详细的可以阅读 [Github Pages 文档](https://help.github.com/articles/user-organization-and-project-pages).
 
 ### User Pages ###
 
@@ -118,6 +122,8 @@ Create `User Pages`.
 
 最后稍等几分钟, 然后访问 `http://<username>.github.io/`
 
+绑定域名的方式可以参考下面的 Project Pages.
+
 ### Project Pages ###
 
 Project Pages分两种:
@@ -134,8 +140,6 @@ Project Pages分两种:
 		cd output
 		git init
 		git checkout -b gh-pages
-		# 将要绑定的域名写到CNAME文件中
-		echo "<yourdomain.com>" > CNAME
 		git add .
 		git commit -m 'your comment'
 		# 以下步骤会在Github上创建一个空项目后提示
@@ -150,6 +154,10 @@ Project Pages分两种:
 4. 创建`master`分支:
 
 		git init
+
+		# 将要绑定的域名写到站点根目录下的CNAME文件中
+		echo "<yourdomain.com>" > CNAME
+
 		git add .
 		git commit -m 'your comment'
 		# 以下步骤会在Github上创建一个空项目后提示

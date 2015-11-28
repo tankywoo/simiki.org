@@ -83,7 +83,11 @@ Run deploy command:
 	$ fab deploy
 
 
-Below procedures are the origin method, and more trouble. More details are give in [Github Pages Documentation](https://help.github.com/articles/user-organization-and-project-pages/)
+---
+
+Below procedures are the origin (maybe deprecated later) method, and more trouble. No need to continue reading.
+
+More details are give in [Github Pages Documentation](https://help.github.com/articles/user-organization-and-project-pages/)
 
 ### User Pages ###
 
@@ -118,6 +122,8 @@ Create `User Pages`.
 
 Wait for a while and visit `http://<username>.github.io/`.
 
+The way to bind domain on User Pages can refer to the Project Pages.
+
 ### Project Pages ###
 
 Project Pages have two types:
@@ -134,8 +140,6 @@ Project Pages have two types:
         cd output
         git init
         git checkout -b gh-pages
-        # Write your domain in file named CNAME
-        echo "<yourdomain.com>" > CNAME
         git add .
         git commit -m 'your comment'
         # These steps will be shown when you create a repo in Github:
@@ -150,6 +154,10 @@ Project Pages have two types:
 4. Setup a `master` branch:
 
         git init
+
+        # Write your domain to file named CNAME, locate under root of site
+        echo "<yourdomain.com>" > CNAME
+
         git add .
         git commit -m 'your comment'
         # These steps will be shown when you create a repo in Github:
@@ -185,10 +193,3 @@ An example:
 
 * [tankywoo/simiki-project-page-without-domain](https://github.com/tankywoo/simiki-project-page-without-domain)
 * [http://tankywoo.github.io/simiki-project-page-without-domain/](http://tankywoo.github.io/simiki-project-page-without-domain/)
-
-**NOTE**:
-
-If `root` is setted in `_config.yml`, you should use `--ignore-root` when you want to preview in local environment. And regenerate without `--ignore-root` when you prepare to deploy to remote server.
-
-    simiki generate --ignore-root
-
