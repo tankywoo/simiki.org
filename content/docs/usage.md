@@ -49,3 +49,6 @@ Some operation need support form `_config.yml`, more details view [Configuration
 
 	# Make sure the `deploy` settings in `_config.yml`
 	$ fab deploy
+
+	# If configured multiple deploy items, you can only run one specified item
+	$ fab deploy:type=rsync

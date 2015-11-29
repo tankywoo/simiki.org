@@ -48,3 +48,6 @@ wiki站点初始化时本地已经生成`fabfile.py`.
 
 	# 首先配置好_config.yml的deploy配置
 	$ fab deploy
+
+	# 如果配置多个deploy项, 可以只指定执行某一种
+	$ fab deploy:type=rsync
