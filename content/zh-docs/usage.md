@@ -22,6 +22,9 @@ date: 2013-10-12 00:00
 	# 本地预览模式监控content目录, 有变更自动更新生成相应静态页面
 	$ simiki p -w
 
+    # 升级Simiki后检查和更新本地内置的脚本及主题(如fabfile.py, simple主题)
+    $ simiki update
+
 监控content目录的预览模式是基于[watchdog](https://github.com/gorakhargosh/watchdog)实现, 对不同系统的参数和内核有一定的限制和要求, 具体见[watchdog文档](https://pythonhosted.org/watchdog/installation.html)
 
 ## 扩展命令 ##
