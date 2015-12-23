@@ -66,7 +66,7 @@ if __name__ == "__main__":
 	print("Hello World!")
 ~~~~
 
-At the same time you can define a language:
+At the same time you can define a language([Supported languages](http://pygments.org/languages/)):
 
 ```python
 ~~~~{.python}
