@@ -41,3 +41,64 @@ Simiki默认会自动生成首页.
 	[TOC]
 
 	<your content>
+
+### Feed ###
+
+***注意***:
+
+1. 暂时只支持Atom, 不支持RSS2.0
+2. 此功能处于测试阶段, 后续可能会有较大的改动
+
+将`atom.xml`放在wiki目录下:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+{% if site.url %}
+  {% set site_url = "%s%s"|format(site.url, site.root) %}
+{% else %}
+  {% set site_url = site.url %}
+{% endif %}
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <generator uri="http://simiki.org/" version="{{ site.version }}">Simiki</generator>
+  <title>{{ site.title }}</title>
+  <link href="{{ site_url }}/" />
+  <link href="{{ site_url }}/atom.xml" rel="self" type="application/atom+xml" />
+  <updated>{{ site.time|rfc3339 }}</updated>
+  <id>{{ site_url }}</id>
+  <author>
+    <name>{{ site.author|e }}</name>
+  </author>
+  {% for f, page in pages.iteritems() %}
+    {% set uri = site_url ~ f|replace('content/', '', 1)|replace('.md', '.html', 1) %}
+  <entry>
+    <id>{{ uri }}</id>
+    <title>{{ page.title|e }}</title>
+    <link href="{{ uri }}" />
+    <published>{{ page.date|rfc3339 }}</published>
+
+    {% if page.updated %}
+    <updated>{{ page.updated|rfc3339 }}</updated>
+    {% else %}
+    <updated>{{ page.date|rfc3339 }}</updated>
+    {% endif %}
+
+    {% if page.category %}
+    <category term="{{ page.category }}" />
+    {% endif %}
+
+    {% if page.content %}
+    <content type="html">{{ page.content|e }}</content>
+    {% endif %}
+    {% if page.summary %}
+    <summary>{{ page.summary|e }}</summary>
+    {% endif %}
+  </entry>
+  {% endfor %}
+</feed>
+```
+
+主题的`base.html`的`<head>`与`</head>`之间添加一行:
+
+```html
+<link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+```
