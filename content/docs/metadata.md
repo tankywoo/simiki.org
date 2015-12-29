@@ -29,6 +29,10 @@ Predefined meta data:
       <td>The date time of wiki page creation, with format `YYYY-mm-dd HH:MM` (**Required**)</td>
     </tr>
     <tr>
+      <td>`updated`</td>
+      <td>The last modified date time of wiki page, with format `YYYY-mm-dd HH:MM`</td>
+    </tr>
+    <tr>
       <td>`layout`</td>
       <td>Specify the layout template to use, the same name with template under used theme. Default is `page`</td>
     </tr>

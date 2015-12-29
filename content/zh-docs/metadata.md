@@ -29,6 +29,10 @@ wiki页面的元数据使用的是YAML Front Matter格式:
       <td>一篇wiki创建的时间, 格式是`YYYY-mm-dd HH:MM` (**必填**)</td>
     </tr>
     <tr>
+      <td>`updated`</td>
+      <td>一篇wiki的最后修改时间, 格式是`YYYY-mm-dd HH:MM`</td>
+    </tr>
+    <tr>
       <td>`layout`</td>
       <td>指定页面使用的布局格式, 和主题的相应模版名一致. 默认是`page`</td>
     </tr>
