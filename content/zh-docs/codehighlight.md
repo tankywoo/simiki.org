@@ -64,7 +64,7 @@ if __name__ == "__main__":
 	print("Hello World!")
 ~~~~
 
-同时还可以指定语言类型([支持的语言](http://pygments.org/languages/)):
+同时还可以指定语言类型([支持的语言](http://pygments.org/languages/)和[标签名称](http://pygments.org/docs/lexers/)):
 
 ```python
 ~~~~{.python}
