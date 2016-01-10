@@ -13,9 +13,9 @@ Simiki对Windows的支持不是很好, 如果可能, 请尽量选择在 `Unix` /
 
 	easy_install http://www.voidspace.org.uk/downloads/pycrypto26/pycrypto-2.6.win32-py2.7.exe
 
-`ecsda`:
+[`ecdsa`](https://pypi.python.org/pypi/ecdsa/):
 
-	pip install ecsda
+	pip install ecdsa
 
 参考:
 

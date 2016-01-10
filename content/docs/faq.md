@@ -3,8 +3,6 @@ title: "FAQ"
 date: 2013-10-12 00:00
 ---
 
-## FAQ ##
-
 ### Use Simiki in Windows ###
 
 Simiki is not good support on Windows. If possible, use it under `Unix` / `Linux` / `Mac`.
@@ -15,9 +13,9 @@ If use [Fabric](http://www.fabfile.org/), some problems maybe happened, make sur
 
 	easy_install http://www.voidspace.org.uk/downloads/pycrypto26/pycrypto-2.6.win32-py2.7.exe
 
-`ecsda`:
+[`ecdsa`](https://pypi.python.org/pypi/ecdsa/):
 
-	pip install ecsda
+	pip install ecdsa
 
 Reference:
 
