@@ -14,16 +14,24 @@ date: 2013-10-12 00:00
     <tr>
       <th>Variable</th>
       <th>Description</th>
+      <th>Other</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>`site.time`</td>
       <td>The last date time site update/generate</td>
+      <td></td>
     </tr>
     <tr>
       <td>`site.structure`</td>
       <td>Store the meta data for all pages. Only exists when generating index. ***This variable will be moved to `pages` variable in the later version***</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>`site.version`</td>
+      <td>The version number of Simiki Generator</td>
+      <td>New in version 1.5.0</td>
     </tr>
   </tbody>
 </table>

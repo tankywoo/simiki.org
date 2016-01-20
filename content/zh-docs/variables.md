@@ -14,16 +14,24 @@ date: 2013-10-12 00:00
     <tr>
       <th>变量</th>
       <th>说明</th>
+      <th>其它</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>`site.time`</td>
       <td>站点最后一次生成更新的时间</td>
+      <td></td>
     </tr>
     <tr>
       <td>`site.structure`</td>
       <td>存储所有页面的元信息. 只在生成首页时存在. ***这个变量下一个版本会移到`pages`中***</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>`site.version`</td>
+      <td>Simiki的版本号</td>
+      <td>1.5.0 版本引入</td>
     </tr>
   </tbody>
 </table>
