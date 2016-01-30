@@ -34,3 +34,10 @@ debug: false
 # If not set or set `false`, simiki will auto generate catalog as index, this is 
 # the default action
 index: 
+
+##### Deploy #####
+deploy:
+  - type: rsync
+    user: root
+    host: 192.81.133.96
+    dir: /opt/simiki.org/output/
