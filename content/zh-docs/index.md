@@ -34,7 +34,7 @@ Simiki 是一个简单的个人wiki框架. 使用[Markdown](https://daringfireba
     <h3>其它</h3>
     <ul>
       <li><a href="deploy.html">部署</a></li>
-      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="faq.html">常见问题</a></li>
     </ul>
   </div>
 
