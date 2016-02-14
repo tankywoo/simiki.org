@@ -34,6 +34,7 @@ Before reading these documents, I recommend that you take a look first at [Quick
     <ul>
       <li><a href="deploy.html">Deploy</a></li>
       <li><a href="faq.html">FAQ</a></li>
+      <li><a href="changelog.html">CHANGELOG</a></li>
     </ul>
   </div>
 
