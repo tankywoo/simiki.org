@@ -13,6 +13,9 @@ date: 2013-10-12 00:00
 	# Generate html pages to output directory (must under root directory of site)
 	$ simiki g
 
+	# Generate html pages(include draft pages) to output directory (must under root directory of site)
+	$ simiki g --draft
+
 	# Local preview mode (develop mode)
 	$ simiki p
 	
