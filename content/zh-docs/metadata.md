@@ -38,7 +38,11 @@ wiki页面的元数据使用的是YAML Front Matter格式:
     </tr>
     <tr>
       <td>`draft`</td>
-      <td>布尔变量,设置`true`表示此页面是草稿, 不会生成静态页面. 默认是`false`</td>
+      <td>布尔变量, 设置`true`表示此页面是草稿, 不会生成静态页面. 默认是`false`</td>
+    </tr>
+    <tr>
+      <td>`render`</td>
+      <td>布尔变量, 设置`false`表示此页面不做markup解析, 原生输出. 默认是`true`</td>
     </tr>
   </tbody>
 </table>
