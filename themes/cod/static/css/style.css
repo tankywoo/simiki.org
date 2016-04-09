@@ -31,6 +31,20 @@ body {
   border-top: 1px solid #e5e5e5;
 }
 
+.footer .beian p {
+    float: right;
+    margin: 0 auto;
+    text-align: center;
+    color: #777;
+}
+
+.footer .beian p a {
+    font-size: 12px;
+    color: #777;
+    text-decoration: none;
+}
+
+
 /* Customize container */
 @media (min-width: 768px) {
   .container {
