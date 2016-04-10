@@ -74,6 +74,11 @@ The config file is `_config.yml`.
       <td>`"simple"`</td>
     </tr>
     <tr>
+      <td>`category`</td>
+      <td>Custom settings of category, such as label(alias name), description, etc. Get by the `pages` variable. See the example below</td>
+      <td>`None`</td>
+    </tr>
+    <tr>
       <td>`default_ext`</td>
       <td>The default extension when creating a new page</td>
       <td>`"md"`</td>
@@ -108,6 +113,12 @@ The config file is `_config.yml`.
 	destination: output
 	themes_dir: themes
 	theme: cod
+
+	category:
+	  - name: linux  # the category directory name
+		label: Linux/运维  # alias name of category, used in index page
+	  - name: database
+		label: 数据库
 	
 	default_ext: md
 	pygments: true

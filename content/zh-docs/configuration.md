@@ -75,6 +75,11 @@ date: 2013-10-12 00:00
     <td>`"simple"`</td>
   </tr>
   <tr>
+    <td>`category`</td>
+    <td>目录的自定义配置, 如目录别名、描述等. 生成时通过`pages`变量获取. 具体见下面的样例</td>
+    <td>`None`</td>
+  </tr>
+  <tr>
     <td>`default_ext`</td>
     <td>`simiki new`生成一篇wiki时的默认后缀</td>
     <td>`"md"`</td>
@@ -110,6 +115,12 @@ date: 2013-10-12 00:00
 	destination: output
 	themes_dir: themes
 	theme: cod
+
+	category:
+	  - name: linux  # 目录名
+		label: Linux/运维  # 目录的别名, 生成首页时可以使用
+	  - name: database
+		label: 数据库
 	
 	default_ext: md
 	pygments: true
