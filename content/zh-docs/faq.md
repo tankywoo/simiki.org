@@ -102,3 +102,14 @@ Simiki默认会自动生成首页.
 ```html
 <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
 ```
+
+### Favicon ###
+
+(v1.5.0.post1版本)
+
+将文件名为`favicon.ico`的icon文件放在wiki根目录下.
+
+另外, 主题需要额外支持:
+
+	<link rel="shortcut icon" href="{{ site.root }}/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="{{ site.root }}/favicon.ico" type="image/x-icon">

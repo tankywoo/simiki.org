@@ -100,3 +100,14 @@ Add this line between `<head>` and `</head>` of theme's `base.html` file:
 ```html
 <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
 ```
+
+### Favicon ###
+
+(Version v1.5.0.post1)
+
+Put the icon file named `favicon.ico` to the top directory of wiki.
+
+And the theme need to set:
+
+	<link rel="shortcut icon" href="{{ site.root }}/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="{{ site.root }}/favicon.ico" type="image/x-icon">

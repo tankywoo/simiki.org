@@ -40,5 +40,9 @@ Predefined meta data:
       <td>`draft`</td>
       <td>Boolean value, if this page is draft and do not want to generate html page, set `true`. Default is `false`</td>
     </tr>
+    <tr>
+      <td>`render`</td>
+      <td>Boolean value, if do not want to parse this page with markup, set `false`. Default is `true`</td>
+    </tr>
   </tbody>
 </table>
