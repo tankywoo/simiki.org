@@ -3,8 +3,7 @@ title: "变更日志"
 date: 2016-02-24 22:15
 ---
 
-v1.5.1 (2016-04-09)
-===================
+### v1.5.1 (2016-04-09) ###
 
 -   Fix `fab deploy` find ghp-import command error, pr \#51
 -   Fix write error when draft: true in watcher
