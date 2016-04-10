@@ -69,7 +69,7 @@ Simiki默认会自动生成首页.
     <name>{{ site.author|e }}</name>
   </author>
   {% for f, page in pages.iteritems() %}
-    {% set uri = site_url ~ f|replace('content/', '', 1)|replace('.md', '.html', 1) %}
+    {% set uri = site_url ~ f|replace('content/', '/', 1)|replace('.md', '.html', 1) %}
   <entry>
     <id>{{ uri }}</id>
     <title>{{ page.title|e }}</title>
