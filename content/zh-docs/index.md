@@ -20,6 +20,7 @@ Simiki 是一个简单的个人wiki框架. 使用[Markdown](https://daringfireba
     </ul>
     <h3>自定义</h3>
     <ul>
+      <li><a href="collection_and_tag.html">集合/标签</a></li>
       <li><a href="variables.html">变量</a></li>
       <li><a href="themes.html">主题</a></li>
     </ul>

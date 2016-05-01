@@ -116,3 +116,12 @@ pre {
   left: 0;
   top: 0;
 }
+
+/* Overwrite Bootstrap */
+blockquote p {
+  font-size: 14px;
+}
+
+blockquote {
+  font-weight: 300;
+}
