@@ -5,7 +5,7 @@ date: 2013-10-12 00:00
 
 Welcome to Documentation of Simiki.
 
-Simiki is a simple personal wiki generator. Use [Markdown](https://daringfireball.net/projects/markdown/) to write, and generate html page. The wiki files classified by category, easy to manage. Note that Simiki only support one-level classfication by now.
+Simiki is a simple personal Wiki generator. Use [Markdown](https://daringfireball.net/projects/markdown/) to write, and generate HTML page. The Wiki files classified by category, easy to manage. Note that Simiki only support one-level classfication by now.
 
 Before reading these documents, I recommend that you take a look first at [Quick Start](/quickstart.html).
 

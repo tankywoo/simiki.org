@@ -3,11 +3,11 @@ title: "文档"
 date: 2013-10-12 00:00
 ---
 
-欢迎来到 Simiki 文档页面.
+欢迎来到 Simiki 文档页面。
 
-Simiki 是一个简单的个人wiki框架. 使用[Markdown](https://daringfireball.net/projects/markdown/)写wiki, 输出静态html页面. wiki源文件按目录分类存放, 方便管理维护, 暂时只支持一级分类.
+Simiki 是一个简单的个人Wiki框架。使用[Markdown](https://daringfireball.net/projects/markdown/)书写Wiki, 生成静态HTML页面。Wiki源文件按目录分类存放, 方便管理维护。
 
-阅读文档前, 建议先阅读[Quick Start](/quickstart.html), 以便快速了解Simiki的基本使用方法.
+阅读文档前, 建议先阅读[Quick Start](/quickstart.html), 以便快速了解Simiki的基本使用方法。
 
 
 <div class="row marketing">
@@ -36,7 +36,7 @@ Simiki 是一个简单的个人wiki框架. 使用[Markdown](https://daringfireba
     <ul>
       <li><a href="deploy.html">部署</a></li>
       <li><a href="faq.html">常见问题</a></li>
-      <li><a href="changelog.html">变更日志</a></li>
+      <li><a href="https://github.com/tankywoo/simiki/blob/master/CHANGELOG.rst">变更日志</a></li>
     </ul>
   </div>
 

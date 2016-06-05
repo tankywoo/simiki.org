@@ -15,9 +15,9 @@ date: 2013-10-12 00:00
 	pygmentize -L styles
 
 	# 生成高亮配色主题CSS文件
-	pygmentize -f html -S [colortheme name] -a .hlcode > syntax.css
+	pygmentize -f html -S <colortheme name> -a .hlcode > syntax.css
 
-## wiki使用语法高亮 ##
+## Wiki使用语法高亮 ##
 
 **注意**: 首先保证熟悉Markdown的语法格式
 

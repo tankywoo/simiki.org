@@ -15,7 +15,7 @@ In general the theme will include syntax css file.
 	pygmentize -L styles
 
 	# Generate syntax css file
-	pygmentize -f html -S [colortheme name] -a .hlcode > syntax.css
+	pygmentize -f html -S <colortheme name> -a .hlcode > syntax.css
 
 ## Use Code Highlight Feature ##
 
