@@ -62,6 +62,10 @@ date: 2013-10-12 00:00
       <td>`page.category`</td>
       <td>The classification category name, relate path to content directory</td>
     </tr>
+    <tr>
+      <td>`page.relation`</td>
+      <td>The meta info of pages list, which have the same tag with current page</td>
+    </tr>
   </tbody>
 </table>
 
@@ -69,6 +73,44 @@ For example, a source file `content/linux/bash.md`, the page.filename is bash.md
 
 ## Index Variables ##
 
-`pages` variable is a dict.
+`pages` variable store the list of whole pages.
 
-***Exists in later version***
+The sturecture looks like that:
+
+```text
+[
+  {
+    "name": "linux",        # Category Name
+    "pages": [
+      ...
+    ]
+  },
+  {
+    "name": "tool",        # Category Name
+    "pages": [             # The whole pages and collections under category
+      {
+        "date": "2016-01-03 00:00",
+        "fname": "other1.md",        # Page without collection
+        ...
+      },
+      {
+        "name": "Version Control",        # Collection Name
+        "pages": [                        # The while pages under collection
+          {
+            "collection": "Version Control",
+            "fname": "git.md",
+            "date": "2016-01-01 00:00"
+            ...
+          },
+          {
+            "collection": "Version Control",
+            "fname": "svn.md",
+            "date": "2016-01-02 00:00"
+            ...
+          }
+        ]
+      }
+    ]
+  }
+]
+```

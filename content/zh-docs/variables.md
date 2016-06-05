@@ -62,6 +62,10 @@ date: 2013-10-12 00:00
       <td>`page.category`</td>
       <td>页面的分类目录名, 相对于content目录的部分</td>
     </tr>
+    <tr>
+      <td>`page.relation`</td>
+      <td>与当前页面相关(同一个tag)的其它文件meta信息列表</td>
+    </tr>
   </tbody>
 </table>
 
@@ -69,6 +73,46 @@ date: 2013-10-12 00:00
 
 ## 首页变量 ##
 
-`pages`变量是一个字典.
+(**1.6版本引入**)
 
-***现在还是`site.structure`, 下一个版本改为pages变量.***
+`pages`存储了所有页面的信息, 是一个list变量。
+
+结构如下：
+
+```text
+[
+  {
+    "name": "linux",        # 目录名
+    "pages": [
+      ...
+    ]
+  },
+  {
+    "name": "tool",        # 目录名
+    "pages": [             # 目录下的所有页面和集合
+      {
+        "date": "2016-01-03 00:00",
+        "fname": "other1.md",        # 无集合的页面
+        ...
+      },
+      {
+        "name": "Version Control",        # 集合名
+        "pages": [                        # 集合下的所有页面
+          {
+            "collection": "Version Control",
+            "fname": "git.md",
+            "date": "2016-01-01 00:00"
+            ...
+          },
+          {
+            "collection": "Version Control",
+            "fname": "svn.md",
+            "date": "2016-01-02 00:00"
+            ...
+          }
+        ]
+      }
+    ]
+  }
+]
+```
