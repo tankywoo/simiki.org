@@ -140,3 +140,46 @@ collection: Version Control
 
 * 同一个目录下，**未配置**集合(collection)的页面(page)和集合是同一级结构
 * 同一个目录下，配置集合(collection)的页面(page)处于集合中更深一级的结构中
+
+### 标签(tag) ###
+
+标签使多篇Wiki之间互相有关联性。
+
+如下例子，两篇Wiki，都是和Vim相关的：
+
+```text hl_lines="5 12 13"
+==> content/book/practical-vim.md <==
+---
+title: "Practical Vim"
+date: 2014-11-13 22:11
+tag: vim  # 以逗号分隔的字符串方式配置tag
+---
+
+==> content/tool/vim.md <==
+---
+title: "Vim"
+date: 2013-08-17 07:32
+tag:  # 以列表的方式配置tag
+  - vim
+---
+```
+
+`page.relation`变量会维护与此页面相关的其它页面信息：
+
+```text hl_lines="3 4 5 6 7 8 9 10 11"
+{
+	'filename': u'vim.html',
+	'relation': [
+		{
+			'category': u'book',
+			'date': '2014-11-13 22:11',
+			'filename': u'practical-vim.html',
+			'tag': ['vim'],
+			'title': 'Practical Vim'
+		}
+	],
+	'tag': ['vim'],
+	'title': 'Vim',
+	...
+}
+```

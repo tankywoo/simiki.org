@@ -43,7 +43,12 @@ wiki页面的元数据使用的是YAML Front Matter格式:
     </tr>
     <tr>
       <td>`collection`</td>
-      <td>页面的集合</td>
+      <td>页面的集合。详细见[集合/标签](/zh-docs/collection_and_tag.html)。</td>
+      <td>可选</td>
+    </tr>
+    <tr>
+      <td>`tag`</td>
+      <td>页面的标签，以`逗号`分隔的字符串或者是列表。详细见[集合/标签](/zh-docs/collection_and_tag.html)。</td>
       <td>可选</td>
     </tr>
     <tr>

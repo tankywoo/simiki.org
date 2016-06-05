@@ -20,6 +20,7 @@ Before reading these documents, I recommend that you take a look first at [Quick
     <h3>Custom</h3>
     <ul>
       <li><a href="variables.html">Variables</a></li>
+      <li><a href="collection_and_tag.html">Collection/Tag</a></li>
       <li><a href="themes.html">Themes</a></li>
     </ul>
   </div>

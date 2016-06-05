@@ -43,7 +43,12 @@ Predefined meta data:
     </tr>
     <tr>
       <td>`collection`</td>
-      <td>The collection of page</td>
+      <td>The collection of page. More details view [Collection/Tag](/docs/collection_and_tag.html).</td>
+      <td>Optional</td>
+    </tr>
+    <tr>
+      <td>`tag`</td>
+      <td>The tag of page, comma separated string or list. More details view [Collection/Tag](/docs/collection_and_tag.html).</td>
       <td>Optional</td>
     </tr>
     <tr>
