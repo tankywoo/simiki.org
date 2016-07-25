@@ -108,7 +108,7 @@ Create `User Pages`.
 3. 回到上层目录, 创建`.gitignore`文件:
 
 		cd ../
-		echo '*.pyc\noutput' > .gitignore
+		echo -e '*.pyc\noutput' > .gitignore
 
 4. 创建`source`分支:
 
@@ -149,7 +149,7 @@ Project Pages分两种:
 3. 回到上层目录, 创建`.gitignore`文件:
 
 		cd ../
-		echo '*.pyc\noutput' > .gitignore
+		echo -e '*.pyc\noutput' > .gitignore
 
 4. 创建`master`分支:
 

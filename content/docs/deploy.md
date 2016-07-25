@@ -108,7 +108,7 @@ Create `User Pages`.
 3. Back to the parent directory, and create a `.gitignore` file:
 
 		cd ../
-		echo '*.pyc\noutput' > .gitignore
+		echo -e '*.pyc\noutput' > .gitignore
 
 4. Setup a `source` branch:
 
@@ -149,7 +149,7 @@ Project Pages have two types:
 3. Back to the parent directory, and create a `.gitignore` file:
 
 		cd ../
-		echo '*.pyc\noutput' > .gitignore
+		echo -e '*.pyc\noutput' > .gitignore
 
 4. Setup a `master` branch:
 
