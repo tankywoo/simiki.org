@@ -83,6 +83,11 @@ The config file is `_config.yml`.
       <td>The default extension when creating a new page</td>
       <td>`"md"`</td>
     </tr>
+  <tr>
+    <td>`markdown`</td>
+    <td>The options of Markdown engine。If not defined, use the default options, otherwise it will overwrite the default options</td>
+    <td>`None`</td>
+  </tr>
     <tr>
       <td>`pygments`</td>
       <td>Set true to enable the code lighlight feature</td>
@@ -116,9 +121,16 @@ The config file is `_config.yml`.
 
 	category:
 	  - name: linux  # the category directory name
-		label: Linux/运维  # alias name of category, used in index page
+		label: Linux/Ops  # alias name of category, used in index page
 	  - name: database
-		label: 数据库
+		label: Database
+
+	##### Markdown Options #####
+	markdown:
+	  - fenced_code
+	  - extra
+	  - codehilite(css_class=hlcode, linenums=True)
+	  - toc(title=Table of Contents)
 	
 	default_ext: md
 	pygments: true

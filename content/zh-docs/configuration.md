@@ -85,6 +85,11 @@ date: 2013-10-12 00:00
     <td>`"md"`</td>
   </tr>
   <tr>
+    <td>`markdown`</td>
+    <td>Markdown引擎的配置选项。如果没有定义，则使用默认的选项；此配置会覆盖默认配置项</td>
+    <td>`None`</td>
+  </tr>
+  <tr>
     <td>`pygments`</td>
     <td>设置`true`为开启代码高亮</td>
     <td>`true`</td>
@@ -121,6 +126,13 @@ date: 2013-10-12 00:00
 		label: Linux/运维  # 目录的别名, 生成首页时可以使用
 	  - name: database
 		label: 数据库
+
+	##### Markdown Options #####
+	markdown:
+	  - fenced_code
+	  - extra
+	  - codehilite(css_class=hlcode, linenums=True)
+	  - toc(title=Table of Contents)
 	
 	default_ext: md
 	pygments: true
