@@ -128,7 +128,7 @@ In the end, you can highlight specified lines:
 		print("Hello World!")
 	~~~~
 
-	########### 或者 ###########
+	########### OR ###########
 
 	```python hl_lines="1 3"
 	import sys
