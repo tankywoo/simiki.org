@@ -60,7 +60,7 @@ The config file is `_config.yml`.
     </tr>
     <tr>
       <td>`attach`</td>
-      <td>Directory to store the attachment(such as image, compression package, etc.).<br />This directory will be copied to `output/` when do generating, as `attach/path/to/file` will be copied to `output/attach/path/to/file`.<br />This directory doesn't created when init site, if need, you should create it manually. ***Modify the default value is not recommended***</td>
+      <td>Directory to store the attachment(such as image, compression package, etc.).<br />The files/directories under this directory will be copied to `output/attach` when do generating, and preserve the directory structure. as `attach/path/to/file` will be copied to `output/attach/path/to/file`.<br />If you want to put attaches under content directory, for example, in Linux, configured with `content/_attach`.<br />This directory doesn't created when init site, if need, you should create it manually. ***Modify the default value is not recommended***</td>
       <td>`"attach"`</td>
     </tr>
     <tr>

@@ -61,7 +61,7 @@ date: 2013-10-12 00:00
   </tr>
   <tr>
     <td>`attach`</td>
-    <td>存储附件文件(如图片,压缩包等)的目录.<br />此目录在生成时会拷贝到output目录, 即`attach/path/to/file`会拷贝到`output/attach/path/to/file`.<br />另外此目录默认没有创建, 如果需要可以手工创建. ***不建议修改默认值***</td>
+    <td>存储附件文件(如图片,压缩包等)的目录.<br />此目录下的内容在生成时会按原结构拷贝到`output/attach/`目录, 即`attach/path/to/file`会拷贝到`output/attach/path/to/file`.<br />如果想放在content目录下, 如在Linux下, 可以配置为`content/_attach`.<br />最终另外此目录默认没有创建, 如果需要可以手工创建. ***不建议修改默认值***</td>
     <td>`"attach"`</td>
   </tr>
   <tr>
