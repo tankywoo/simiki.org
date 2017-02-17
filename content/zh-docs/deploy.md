@@ -88,10 +88,14 @@ date: 2013-10-12 00:00
 
 	$ fab deploy
 
+> 针对 Github Pages, 默认情况下，`fab deploy` 实际执行的是 `ghp-import -p -m "Update output documentation" -r origin -b gh-pages output`。ghp-import 是一个开源的工具，可以很方便的将指定目录（如这里的 output 目录）提交到 gh-pages 分支并推送到 remote 地址。ghp-import 会遍历指定目录的所有文件，以 git 底层命令 `git fast-import` 逐个将文件以新增或修改的方式加入到仓库。
+
+
+（结束……）
 
 ---
 
-下面的步骤是最原始(后续可能弃用)的方式, 比较麻烦. 可以不必阅读.
+**注：下面的篇幅提供了另外一种针对 Github Pages 的部署方法，和上面使用 `ghp-import` 的方法不一样，且需要手动配置，比较麻烦。目前这种方式已经弃用，不再维护。**
 
 更详细的可以阅读 [Github Pages 文档](https://help.github.com/articles/user-organization-and-project-pages)。
 

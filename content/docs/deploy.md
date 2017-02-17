@@ -88,10 +88,15 @@ Run deploy command:
 
 	$ fab deploy
 
+> For Github Pages, with default settings, `ghp-import` actually executes `ghp-import -p -m "Update output documentation" -r origin -b gh-pages output`. ghp-import is a open-source tool, it can commit the changes of specific directory (e.g. output directory) to gh-pages branch and push to Github. ghp-import will traverse all the files under specific directory, and use the backend command `git fast-import`, add or modify the file to git repository one by one.
+
+
+(The End ...)
+
 
 ---
 
-Below procedures are the origin (maybe deprecated later) method, and more trouble. No need to continue reading.
+**Note: Below procedures are another way to deploy for Github Pages, not the same as above way using `ghp-import`, and this need to manually configure, very complicated. At present, this method is deprecated, and is no longer maintained.**
 
 More details are give in [Github Pages Documentation](https://help.github.com/articles/user-organization-and-project-pages/)
 
