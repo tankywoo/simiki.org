@@ -44,6 +44,12 @@ If use Fabric, you need to add `deploy` settings in `_config.yml`:
 
 This will upload the sub-file/sub-directory under output to the remote server, with configured directory path, base on FTP.
 
+About `password` field:
+
+- If *password* field not exists, the password is empty string.
+- If *password* field exists but without value, script will enter into interactive mode and prompt you to enter the password.
+- If *password* field exists and has value, script will use this password directly to authenticate with the ftp server.
+
 **NOTE**: If configured password, DO NOT to put this config file to public server, such as Github public repository!
 
 **Advice**: Configure password with empty value, this will let you enter password every time:
