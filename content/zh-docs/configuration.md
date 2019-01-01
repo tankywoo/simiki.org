@@ -72,7 +72,7 @@ date: 2013-10-12 00:00
   <tr>
     <td>`theme`</td>
     <td>指定使用的主题名. 主题名即存放在`themes_dir`目录下的主题目录名</td>
-    <td>`"simple"`</td>
+    <td>`"simple2"`</td>
   </tr>
   <tr>
     <td>`category`</td>

@@ -11,7 +11,7 @@ date: 2013-10-12 00:00
 	├── fabfile.py
 	├── output
 	└── themes
-		└── simple
+		└── simple2
 
 文件/目录说明:
 

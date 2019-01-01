@@ -26,7 +26,7 @@ date: 2013-10-12 00:00
 	# Auto update and generate html pages if there is change
 	$ simiki p -w
 
-    # Check and update builtin scripts and themes after upgrade Simiki (such as fabfile.py and simple theme)
+    # Check and update builtin scripts and themes after upgrade Simiki (such as fabfile.py and simple2 theme)
     $ simiki update
 
 The content directory watcher is base on [watchdog](https://github.com/gorakhargosh/watchdog), there are some dependencies and caveats with different platforms, more details are given in [watchdog installation](https://pythonhosted.org/watchdog/installation.html)

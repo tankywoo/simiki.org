@@ -11,7 +11,7 @@ The directory structure after initial site by Simiki(do `simiki init`) looks lik
 	├── fabfile.py
 	├── output
 	└── themes
-		└── simple
+		└── simple2
 
 The files/directories description:
 

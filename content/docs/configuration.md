@@ -71,7 +71,7 @@ The config file is `_config.yml`.
     <tr>
       <td>`theme`</td>
       <td>Specified the theme, whose name is the same as directory name under `themes_dir`</td>
-      <td>`"simple"`</td>
+      <td>`"simple2"`</td>
     </tr>
     <tr>
       <td>`category`</td>
