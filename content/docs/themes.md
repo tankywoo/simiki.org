@@ -10,7 +10,7 @@ A simplest theme only need `index.html` and `page.html`:
 * `index.html` is used for index page as catalog
 * `page.html` is used for every wiki page.
 
-Default theme named `simple` will exists after initialled wiki site.
+Default theme named `simple2` will exists after initialled wiki site.
 
 More themes in [simiki-themes](https://github.com/tankywoo/simiki-themes).
 
